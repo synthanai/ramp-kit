@@ -485,6 +485,27 @@ RAMP promises compounding benefit through Trinity integration:
 
 ---
 
+## 🆓 OSS vs 💎 Platform
+
+**RAMP-Kit is the open protocol. ARANGAM is the premium platform.**
+
+| What You Get | RAMP-Kit (OSS) | ARANGAM Platform |
+|--------------|----------------|------------------|
+| RAMPKIT Protocol | ✅ Full 7-step process | ✅ |
+| L1-L5 Levels + DOORS | ✅ | ✅ |
+| CLI + Web Playground | ✅ | ✅ |
+| **Hosted Decision Ledger** | ❌ | ✅ MOMENT tracking |
+| **Team Governance** | ❌ | ✅ Approvals + workflows |
+| **RAMP Enforcement Engine** | ❌ | ✅ Automated gates |
+| **Enterprise SSO + Retention** | ❌ | ✅ |
+| **Priority Support** | ❌ | ✅ |
+
+> **The protocol is free. The enforcement is premium.**
+
+See [ATTRIBUTION.md](ATTRIBUTION.md) for attribution guidelines.
+
+---
+
 ## Links
 
 - **[Web Playground](https://synthanai.github.io/ramp-kit)** — Try in browser
