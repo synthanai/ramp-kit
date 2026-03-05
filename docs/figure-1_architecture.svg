@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arrow-down" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="380" fill="white"/>
+
+  <!-- Title -->
+  <text x="450" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">RAMP-Kit: Reversible Action Management Protocol</text>
+  <text x="450" y="46" text-anchor="middle" font-size="11" fill="#777">Move fast on two-way doors. Slow down on one-way doors.</text>
+
+  <!-- ============ Input: Decision ============ -->
+  <rect x="60" y="120" width="120" height="60" rx="10" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="120" y="147" text-anchor="middle" font-size="12" font-weight="bold" fill="#1976D2">Decision</text>
+  <text x="120" y="163" text-anchor="middle" font-size="10" fill="#555">"Ship this?"</text>
+
+  <!-- Arrow -->
+  <line x1="180" y1="150" x2="218" y2="150" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="199" y="142" text-anchor="middle" font-size="9" fill="#777">ASSESS</text>
+
+  <!-- ============ RAMP Score ============ -->
+  <rect x="220" y="88" width="180" height="126" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="310" y="112" text-anchor="middle" font-size="13" font-weight="bold" fill="#6A1B9A">RAMP Score</text>
+  <text x="310" y="128" text-anchor="middle" font-size="10" fill="#555">(0-100)</text>
+
+  <text x="240" y="150" font-size="10" fill="#555">Can we undo?</text>
+  <text x="240" y="165" font-size="10" fill="#555">Additive?</text>
+  <text x="240" y="180" font-size="10" fill="#555">Containable?</text>
+  <text x="240" y="195" font-size="10" fill="#555">Known rollback?</text>
+
+  <!-- Arrow to split -->
+  <line x1="400" y1="150" x2="438" y2="150" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ============ Level Classification ============ -->
+  <rect x="440" y="68" width="150" height="170" rx="8" fill="#FFF8E1" stroke="#F57F17" stroke-width="2"/>
+  <text x="515" y="92" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Level</text>
+
+  <!-- L1 -->
+  <rect x="455" y="100" width="120" height="22" rx="5" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="515" y="116" text-anchor="middle" font-size="9" font-weight="bold" fill="#2E7D32">⚡ L1: Instant (&lt;1h)</text>
+
+  <!-- L2 -->
+  <rect x="455" y="128" width="120" height="22" rx="5" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="515" y="144" text-anchor="middle" font-size="9" font-weight="bold" fill="#2E7D32">🔄 L2: Rapid (&lt;1d)</text>
+
+  <!-- L3 -->
+  <rect x="455" y="156" width="120" height="22" rx="5" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+  <text x="515" y="172" text-anchor="middle" font-size="9" font-weight="bold" fill="#E65100">📋 L3: Planned (&lt;1w)</text>
+
+  <!-- L4 -->
+  <rect x="455" y="184" width="120" height="22" rx="5" fill="#FFEBEE" stroke="#F44336" stroke-width="1"/>
+  <text x="515" y="200" text-anchor="middle" font-size="9" font-weight="bold" fill="#C62828">⚠️ L4: Effortful (&lt;1m)</text>
+
+  <!-- L5 -->
+  <rect x="455" y="212" width="120" height="22" rx="5" fill="#FFEBEE" stroke="#F44336" stroke-width="1.5"/>
+  <text x="515" y="228" text-anchor="middle" font-size="9" font-weight="bold" fill="#C62828">🚫 L5: Irreversible</text>
+
+  <!-- ============ RAMP DOWN (Green) ============ -->
+  <line x1="590" y1="120" x2="640" y2="92" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="642" y="62" width="120" height="70" rx="10" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="702" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">RAMP</text>
+  <text x="702" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">DOWN ↓</text>
+  <text x="702" y="124" text-anchor="middle" font-size="10" fill="#555">Ship it</text>
+
+  <!-- Arrow to output -->
+  <line x1="762" y1="97" x2="800" y2="97" stroke="#4CAF50" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="802" y="75" width="80" height="44" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="842" y="102" text-anchor="middle" font-size="11" font-weight="bold" fill="#2E7D32">✓ Ship</text>
+
+  <!-- ============ RAMP UP (Red) ============ -->
+  <line x1="590" y1="210" x2="640" y2="230" stroke="#F44336" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="642" y="200" width="120" height="70" rx="10" fill="#FFEBEE" stroke="#F44336" stroke-width="2"/>
+  <text x="702" y="226" text-anchor="middle" font-size="14" font-weight="bold" fill="#C62828">RAMP</text>
+  <text x="702" y="244" text-anchor="middle" font-size="14" font-weight="bold" fill="#C62828">UP ↑</text>
+  <text x="702" y="262" text-anchor="middle" font-size="10" fill="#555">Govern it</text>
+
+  <!-- Arrow to output -->
+  <line x1="762" y1="235" x2="800" y2="235" stroke="#F44336" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="802" y="213" width="80" height="44" rx="8" fill="#FFEBEE" stroke="#F44336" stroke-width="1.5"/>
+  <text x="842" y="240" text-anchor="middle" font-size="11" font-weight="bold" fill="#C62828">■ Stop</text>
+
+  <!-- ============ Legend ============ -->
+  <rect x="180" y="310" width="12" height="12" rx="2" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="198" y="321" font-size="10" fill="#555">Two-way door (reversible)</text>
+
+  <rect x="380" y="310" width="12" height="12" rx="2" fill="#FFEBEE" stroke="#F44336" stroke-width="1"/>
+  <text x="398" y="321" font-size="10" fill="#555">One-way door (irreversible)</text>
+
+  <rect x="580" y="310" width="12" height="12" rx="2" fill="#FFF8E1" stroke="#F57F17" stroke-width="1"/>
+  <text x="598" y="321" font-size="10" fill="#555">Level Assessment</text>
+
+  <text x="450" y="360" text-anchor="middle" font-size="11" fill="#555">"Can we undo this?" — The only question that matters for process weight.</text>
+</svg>
