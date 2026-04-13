@@ -12,11 +12,11 @@ The methodology remains constant, but the context determines how RAMP and MVR ar
 ┌───────────────────────────────────────────────────────────────────────┐
 │                          P H A S E                                    │
 ├───────────────────────────────────────────────────────────────────────┤
-│ 👤 P — PERSONAL     Individual builds reversibility intuition        │
-│ 👥 H — HUDDLE       Team collectively assesses (Finger Protocol)     │
-│ 🤖 A — AUTOMATED    Pipeline enforces RAMP checks in CI/CD           │
-│ 🤝 S — SUPPORTED    AI augments human judgment                       │
-│ 🏛️ E — ENTERPRISE   Formal governance for high-stakes decisions      │
+│ 👤 P, PERSONAL     Individual builds reversibility intuition        │
+│ 👥 H, HUDDLE       Team collectively assesses (Finger Protocol)     │
+│ 🤖 A, AUTOMATED    Pipeline enforces RAMP checks in CI/CD           │
+│ 🤝 S, SUPPORTED    AI augments human judgment                       │
+│ 🏛️ E, ENTERPRISE   Formal governance for high-stakes decisions      │
 └───────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -84,7 +84,7 @@ Team: [shows fingers]
   - Ops: 2 fingers (L2)
 Facilitator: "We have a split. PM, what's your concern?"
 PM: "Retry logic could cause duplicate charges"
-Facilitator: "Good catch. Calling it L3 — we need rollback before shipping."
+Facilitator: "Good catch. Calling it L3, we need rollback before shipping."
 ```
 
 ### Artifacts

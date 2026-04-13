@@ -25,7 +25,7 @@ Not all decisions deserve equal weight. A feature flag toggle should not require
 ### 3. MOMENTUM WITH CHECKPOINTS over APPROVAL BOTTLENECKS
 Pauses for awareness, not gates for permission.
 
-Speed is valuable. But speed without awareness is recklessness. RAMP inserts **pauses** — moments to check signals and verify rollback capability — rather than **gates** requiring external approval.
+Speed is valuable. But speed without awareness is recklessness. RAMP inserts **pauses** — moments to check signals and verify rollback capability, rather than **gates** requiring external approval.
 
 ### 4. OBSERVABLE CONTAINMENT over ASSUMED SAFETY
 Blast radius awareness over optimistic deployment.
@@ -56,7 +56,7 @@ Blast radius awareness over optimistic deployment.
 
 ### Architecture
 
-10. **Simplicity** — maximizing the number of reversible decisions — is essential.
+10. **Simplicity** — maximizing the number of reversible decisions, is essential.
 11. **Best designs emerge** from teams that understand blast radius.
 12. **Regularly reflect** on which decisions were actually irreversible and adjust.
 
@@ -68,7 +68,7 @@ Blast radius awareness over optimistic deployment.
 
 Jeff Bezos identified that most organizational dysfunction stems from treating all decisions the same:
 
-> "Some decisions are consequential and irreversible or nearly irreversible — one-way doors — and these decisions must be made methodically, carefully, slowly, with great deliberation and consultation... But most decisions aren't like that — they are changeable, reversible — they're two-way doors."
+> "Some decisions are consequential and irreversible or nearly irreversible, one-way doors, and these decisions must be made methodically, carefully, slowly, with great deliberation and consultation... But most decisions aren't like that, they are changeable, reversible, they're two-way doors."
 
 ### The Two Failure Modes
 
@@ -149,7 +149,7 @@ RAMP isn't just an operational framework. It's an epistemological stance:
 >
 > *What I can control is my ability to recover.*
 >
-> *The question isn't "will this succeed?" — it's "can we undo this if it doesn't?"*
+> *The question isn't "will this succeed?", it's "can we undo this if it doesn't?"*
 
 This is humility operationalized. It acknowledges uncertainty while maintaining velocity.
 

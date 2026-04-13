@@ -18,9 +18,9 @@ The Four Laws form the bedrock of the RAMP methodology. They encode the fundamen
 
 - **No action proceeds without explicit classification.** The door type must be named before walking through.
 
-- **Classification maps to RAMP Levels (L1-L5).** The declaration isn't subjective — it's quantified.
+- **Classification maps to RAMP Levels (L1-L5).** The declaration isn't subjective, it's quantified.
 
-- **Implicit assumptions about reversibility are the leading cause of preventable regret.** "We can always roll back" is not classification — it's hope.
+- **Implicit assumptions about reversibility are the leading cause of preventable regret.** "We can always roll back" is not classification, it's hope.
 
 ### Practice
 
@@ -64,7 +64,7 @@ Before any action:
 
 - **Scope creep toward irreversibility triggers automatic re-assessment.** If an L2 action starts looking like L4, stop and re-evaluate.
 
-- **Pauses are moments to regain situational awareness.** They're not "approvals" — they're reflection points.
+- **Pauses are moments to regain situational awareness.** They're not "approvals", they're reflection points.
 
 - **Prevents silent escalation.** L1 "quick tweaks" can silently evolve into L4 "permanent migrations" without anyone noticing.
 
@@ -148,7 +148,7 @@ The Four Laws constrain action in healthy ways:
 1. **You cannot act without classifying.** No undeclared door-walking.
 2. **You cannot bypass governance based on seniority.** Irreversibility trumps hierarchy.
 3. **You cannot ignore scope creep.** Momentum brakes are automatic.
-4. **You cannot ship without containment.** Blast radius, rollback, signals — all required.
+4. **You cannot ship without containment.** Blast radius, rollback, signals, all required.
 
 ---
 

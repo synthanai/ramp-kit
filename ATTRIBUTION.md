@@ -17,7 +17,7 @@ Include one of the following in your README, documentation, or about page:
 
 **Text:**
 ```
-Powered by RAMP-Kit — https://github.com/synthanai/ramp-kit
+Powered by RAMP-Kit, https://github.com/synthanai/ramp-kit
 ```
 
 ### For Academic Work

@@ -224,33 +224,33 @@ ramp gate "Deploy auth changes" \
 ### Feature Flag Rollout
 ```
 Score: 95 → L1
-- Undo: YES (+30) — flag off in seconds
-- Additive: YES (+25) — new feature, not replacing
-- Blast: YES (+20) — staged rollout
-- Rollback: YES (+15) — kill switch ready
-- Detection: YES (+10) — error rates monitored
+- Undo: YES (+30), flag off in seconds
+- Additive: YES (+25), new feature, not replacing
+- Blast: YES (+20), staged rollout
+- Rollback: YES (+15), kill switch ready
+- Detection: YES (+10), error rates monitored
 → 🟢 GREEN: Ship it
 ```
 
 ### Database Migration
 ```
 Score: 50 → L3
-- Undo: PARTIAL (+15) — can restore from backup
-- Additive: NO (0) — schema change
-- Blast: PARTIAL (+10) — affects all using old schema
-- Rollback: YES (+15) — migration script tested
-- Detection: YES (+10) — health checks in place
+- Undo: PARTIAL (+15), can restore from backup
+- Additive: NO (0), schema change
+- Blast: PARTIAL (+10), affects all using old schema
+- Rollback: YES (+15), migration script tested
+- Detection: YES (+10), health checks in place
 → 🟡 YELLOW: Ship with checkpoints
 ```
 
 ### Pricing Change
 ```
 Score: 25 → L5
-- Undo: NO (0) — customer trust impact
-- Additive: NO (0) — changing existing pricing
-- Blast: NO (0) — affects all customers
-- Rollback: PARTIAL (+15) — can revert prices
-- Detection: PARTIAL (+10) — churn monitoring
+- Undo: NO (0), customer trust impact
+- Additive: NO (0), changing existing pricing
+- Blast: NO (0), affects all customers
+- Rollback: PARTIAL (+15), can revert prices
+- Detection: PARTIAL (+10), churn monitoring
 → 🔴 RED: Full RAMPKIT required
 ```
 

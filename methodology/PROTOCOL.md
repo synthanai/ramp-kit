@@ -277,7 +277,7 @@ I ─ INSPECT: Check signals at checkpoints
 T ─ TRACK: Record outcome, extract learning
 
 Full protocol: ~45 minutes
-For rapid assessment: Use MVR (15 minutes) — R-A-M-P only
+For rapid assessment: Use MVR (15 minutes), R-A-M-P only
 ```
 
 ---

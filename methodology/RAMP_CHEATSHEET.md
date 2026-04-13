@@ -33,13 +33,13 @@ Learn RAMP in 60 seconds.
 ## The Protocol (RAMPKIT)
 
 ```
-R — Recognize ("What?")
-A — Assess ("How reversible?")
-M — Map ("What if it fails?")
-P — Position ("Up or down?")
-K — Kickoff ("Who owns it?")
-I — Inspect ("Check signals")
-T — Track ("What did we learn?")
+R, Recognize ("What?")
+A, Assess ("How reversible?")
+M, Map ("What if it fails?")
+P, Position ("Up or down?")
+K, Kickoff ("Who owns it?")
+I, Inspect ("Check signals")
+T, Track ("What did we learn?")
 ```
 
 ---
@@ -53,11 +53,11 @@ T — Track ("What did we learn?")
 ## The Principles (DOORS)
 
 ```
-D — Declare the door type
-O — Observe irreversibility triggers
-O — Own the rollback path
-R — Ready the rollback before shipping
-S — Signal when to reverse
+D, Declare the door type
+O, Observe irreversibility triggers
+O, Own the rollback path
+R, Ready the rollback before shipping
+S, Signal when to reverse
 ```
 
 ---

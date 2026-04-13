@@ -105,11 +105,11 @@ ramp ref
 RAMP classifies decisions into five levels based on reversal time:
 
 ```
-⚡ L1 — INSTANT      (<1 hour)   → Ship it
-🔄 L2 — RAPID        (<1 day)    → Monitor & Ship
-📋 L3 — PLANNED      (<1 week)   → Plan rollback first
-⚠️ L4 — EFFORTFUL    (<1 month)  → Require approval
-🚫 L5 — IRREVERSIBLE (Permanent) → Full RAMP UP
+⚡ L1, INSTANT      (<1 hour)   → Ship it
+🔄 L2, RAPID        (<1 day)    → Monitor & Ship
+📋 L3, PLANNED      (<1 week)   → Plan rollback first
+⚠️ L4, EFFORTFUL    (<1 month)  → Require approval
+🚫 L5, IRREVERSIBLE (Permanent) → Full RAMP UP
 ```
 
 | Level | Name | Reversal Time | Typical Examples | Action |
@@ -170,9 +170,9 @@ For time-constrained decisions, a rapid 4-step protocol delivering 80% of insigh
 | **P** | 3 min | "Ship or stop?" |
 
 **Traffic Light Decision:**
-- 🟢 **GREEN (L1-L2)**: RAMP DOWN — Ship it now
-- 🟡 **YELLOW (L3)**: RAMP CAREFULLY — Ship with monitoring
-- 🔴 **RED (L4-L5)**: RAMP UP — Stop and escalate
+- 🟢 **GREEN (L1-L2)**: RAMP DOWN, Ship it now
+- 🟡 **YELLOW (L3)**: RAMP CAREFULLY, Ship with monitoring
+- 🔴 **RED (L4-L5)**: RAMP UP, Stop and escalate
 
 📖 **[Full MVR Protocol →](methodology/MVR_PROTOCOL.md)**
 
@@ -205,11 +205,11 @@ Five epistemological stances for practitioners. Check the DOORS before you walk 
 ┌───────────────────────────────────────────────────────────────────────┐
 │                          P H A S E                                    │
 ├───────────────────────────────────────────────────────────────────────┤
-│ 👤 P — PERSONAL     Individual builds reversibility intuition        │
-│ 👥 H — HUDDLE       Team collectively assesses (Finger Protocol)     │
-│ 🤖 A — AUTOMATED    Pipeline enforces RAMP checks in CI/CD           │
-│ 🤝 S — SUPPORTED    AI augments human judgment                       │
-│ 🏛️ E — ENTERPRISE   Formal governance for high-stakes decisions      │
+│ 👤 P, PERSONAL     Individual builds reversibility intuition        │
+│ 👥 H, HUDDLE       Team collectively assesses (Finger Protocol)     │
+│ 🤖 A, AUTOMATED    Pipeline enforces RAMP checks in CI/CD           │
+│ 🤝 S, SUPPORTED    AI augments human judgment                       │
+│ 🏛️ E, ENTERPRISE   Formal governance for high-stakes decisions      │
 └───────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -229,7 +229,7 @@ Five epistemological stances for practitioners. Check the DOORS before you walk 
 
 The foundational physics of reversibility:
 
-1. **Law of Reversibility**: Every action must declare its nature — Reversible, Costly to Reverse, or Irreversible.
+1. **Law of Reversibility**: Every action must declare its nature, Reversible, Costly to Reverse, or Irreversible.
 
 2. **Law of Proportional Autonomy**: Autonomy scales with reversibility. More reversible = more autonomy.
 

@@ -9,11 +9,11 @@ The five-tier classification system for decision reversibility.
 RAMP classifies decisions into five levels based on **reversal time** — how long it takes to undo the action if it goes wrong.
 
 ```
-⚡ L1 — INSTANT      (<1 hour)   → Ship it
-🔄 L2 — RAPID        (<1 day)    → Monitor & Ship
-📋 L3 — PLANNED      (<1 week)   → Plan rollback first
-⚠️ L4 — EFFORTFUL    (<1 month)  → Require approval
-🚫 L5 — IRREVERSIBLE (Permanent) → Full RAMP UP
+⚡ L1, INSTANT      (<1 hour)   → Ship it
+🔄 L2, RAPID        (<1 day)    → Monitor & Ship
+📋 L3, PLANNED      (<1 week)   → Plan rollback first
+⚠️ L4, EFFORTFUL    (<1 month)  → Require approval
+🚫 L5, IRREVERSIBLE (Permanent) → Full RAMP UP
 ```
 
 ---
