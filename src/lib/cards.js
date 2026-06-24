@@ -1,0 +1,146 @@
+/**
+ * RAMP Card Templates
+ */
+
+// Domain categories
+export const DOMAINS = {
+    technology: { name: 'Technology', emoji: '💻', range: [6, 15] },
+    product: { name: 'Product', emoji: '📦', range: [16, 23] },
+    people: { name: 'People', emoji: '👥', range: [24, 31] },
+    finance: { name: 'Finance', emoji: '💰', range: [32, 37] },
+    legal: { name: 'Legal/Compliance', emoji: '⚖️', range: [38, 43] },
+    partnership: { name: 'Partnership', emoji: '🤝', range: [44, 48] },
+    communication: { name: 'Communication', emoji: '📢', range: [49, 53] },
+    personal: { name: 'Personal', emoji: '🧑', range: [54, 58] },
+    security: { name: 'Security', emoji: '🔐', range: [59, 63] },
+    healthcare: { name: 'Healthcare', emoji: '🏥', range: [64, 68] },
+    ai: { name: 'AI/ML', emoji: '🤖', range: [69, 73] },
+    operations: { name: 'Operations', emoji: '⚙️', range: [74, 78] },
+    sales: { name: 'Sales', emoji: '💼', range: [79, 83] },
+    cs: { name: 'Customer Success', emoji: '🎯', range: [84, 88] },
+    marketing: { name: 'Marketing', emoji: '📣', range: [89, 93] },
+    rd: { name: 'R&D/Innovation', emoji: '🔬', range: [94, 98] },
+    esg: { name: 'ESG/Sustainability', emoji: '🌱', range: [99, 103] },
+    gov: { name: 'Government/Public', emoji: '🏛️', range: [104, 108] }
+};
+
+// Sample card templates
+export const CARD_TEMPLATES = [
+    { id: '001', name: 'Tech Architecture', domain: 'technology', level: 'L3-L4' },
+    { id: '002', name: 'Feature Prioritization', domain: 'product', level: 'L1-L2' },
+    { id: '003', name: 'Hiring Decision', domain: 'people', level: 'L3-L4' },
+    { id: '006', name: 'API Breaking Change', domain: 'technology', level: 'L3-L4' },
+    { id: '007', name: 'Database Migration', domain: 'technology', level: 'L2-L4' },
+    { id: '008', name: 'Cloud Migration', domain: 'technology', level: 'L3-L5' },
+    { id: '016', name: 'Pricing Change', domain: 'product', level: 'L2-L5' },
+    { id: '017', name: 'Feature Launch', domain: 'product', level: 'L1-L4' },
+    { id: '023', name: 'Product Pivot', domain: 'product', level: 'L3-L5' },
+    { id: '024', name: 'Team Restructuring', domain: 'people', level: 'L2-L5' },
+    { id: '026', name: 'Termination Decision', domain: 'people', level: 'L3-L5' },
+    { id: '059', name: 'Authentication Change', domain: 'security', level: 'L2-L4' },
+    { id: '060', name: 'Security Breach Response', domain: 'security', level: 'L3-L5' },
+    { id: '069', name: 'AI Model Deployment', domain: 'ai', level: 'L2-L5' },
+    { id: '082', name: 'CRM Migration', domain: 'sales', level: 'L3-L5' },
+    { id: '099', name: 'Carbon Commitment', domain: 'esg', level: 'L2-L5' }
+];
+
+/**
+ * Generate a RAMP card
+ */
+export function generateCard(options) {
+    const { description, score, level, direction, owner, domain } = options;
+    const now = new Date().toISOString().split('T')[0];
+    const cardId = `RAMP-${now.replace(/-/g, '')}-${Math.random().toString(36).substr(2, 4).toUpperCase()}`;
+
+    return `# RAMP Card: ${description}
+
+## Metadata
+- **Card ID**: ${cardId}
+- **Created**: ${now}
+- **Owner**: ${owner || '[Assign Owner]'}
+- **Status**: Draft
+
+## Classification
+- **RAMP Score**: ${score}/100
+- **RAMP Level**: ${level}
+- **Direction**: ${direction}
+- **Domain**: ${domain || 'General'}
+
+## Decision Statement
+We are about to: ${description}
+This affects: [Define affected systems/users]
+The goal is: [Define success criteria]
+If this fails: [Define worst-case scenario]
+
+## Assessment
+| Question | Answer | Points |
+|----------|--------|--------|
+| 24-hour undo? | ___ | ___ |
+| Additive? | ___ | ___ |
+| Limited blast radius? | ___ | ___ |
+| Tested rollback? | ___ | ___ |
+| Quick detection? | ___ | ___ |
+| **Total** | | ${score}/100 |
+
+## Containment
+
+### Rollback Mechanism
+- **How**: [Steps to reverse]
+- **Who**: [Responsible party]
+- **When**: [Time to rollback]
+- **Cost**: [Rollback cost estimate]
+
+### Blast Radius
+- **Systems**: [Affected systems]
+- **Users**: [Number of affected users]
+- **Revenue**: [Revenue at risk]
+
+### Observable Signals
+- [ ] Signal 1: ___
+- [ ] Signal 2: ___
+- [ ] Signal 3: ___
+
+### Irreversibility Triggers
+- [ ] Trigger 1: ___
+- [ ] Trigger 2: ___
+
+## Checkpoints
+${level.includes('1') ? '- [ ] No checkpoints needed (L1)' :
+            level.includes('2') ? `- [ ] Checkpoint 1: ___
+- [ ] Checkpoint 2: ___
+- [ ] Checkpoint 3: ___` :
+                `- [ ] Checkpoint 1: ___
+- [ ] Checkpoint 2: ___
+- [ ] Checkpoint 3: ___
+- [ ] Checkpoint 4: ___
+- [ ] Checkpoint 5: ___`}
+
+## Approval (${level.includes('4') || level.includes('5') ? 'Required' : 'Optional'})
+${level.includes('4') || level.includes('5') ?
+            `- [ ] Approver 1: ___ (Date: ___)
+- [ ] Approver 2: ___ (Date: ___)` :
+            '- N/A for this RAMP level'}
+
+## Outcome
+- **Result**: [Shipped / Rolled Back / Blocked]
+- **Learnings**: ___
+- **Closed**: [Date]
+
+---
+*Generated by RAMP-KIT CLI v1.0.0*
+`;
+}
+
+/**
+ * Get cards by domain
+ */
+export function getCardsByDomain(domain) {
+    return CARD_TEMPLATES.filter(c => c.domain === domain);
+}
+
+/**
+ * Get cards by level
+ */
+export function getCardsByLevel(level) {
+    return CARD_TEMPLATES.filter(c => c.level.includes(level));
+}
